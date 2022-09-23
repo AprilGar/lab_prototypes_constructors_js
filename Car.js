@@ -9,7 +9,6 @@ const Car = function (manufacturer, price, engineType){
     this.setPrice = (price) => this.price = price;
     this.getEngineType = () => this.engineType;
     this.setEngineType = (engineType) => this.engineType = engineType;
-
 }
 
 const car1 = new Car('Mazda', 15000, 2000);
@@ -17,3 +16,5 @@ const car2 = new Car('Vauxhall', 2000, 1200);
 
 // console.log(car2);
 // console.log(car1.getManufacturer());
+
+module.exports = {Car};
