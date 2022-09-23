@@ -1,4 +1,4 @@
-const {Ca } = require("./Car");
+const {Car} = require("./Car");
 
 const Dealership = function(name, maxCapacity){
     this.name = name;
