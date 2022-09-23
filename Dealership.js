@@ -1,11 +1,15 @@
-// Create a Dealership class. 
-// It should have properties representing:
-// its name
-// maximum number of cars it can have
-// the cars currently in stock
+const {Ca } = require("./Car");
 
-const Dealership = function(name, maxCars){
+const Dealership = function(name, maxCapacity){
     this.name = name;
-    this.maxCars = maxCars;
-    this.carsInStock = [];
+    this.maxCapacity = maxCapacity;
+    this.stock = [];
+
+    this.getName = ()=> this.name;
+    this.setName = (name)=> this.name = name;
+    this.getMaxCapacity = ()=> this.maxCapacity;
+    this.setMaxCapacity = (maxCapacity)=> this.maxCapacity = maxCapacity;
+    this.getStock = ()=> this.stock;
+    this.addStock = (car)=> this.stock.push(car);
+    this.removeStock = (car)=> this.stock.splice(this.stock.indexOf(car), 1);
 }
